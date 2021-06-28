@@ -1,0 +1,26 @@
+body{
+	font-family: $regular-font;
+	font-size: $regular-size;
+	font-weight: $light-weight;
+	color: $dark-text;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: $header-font;
+	font-weight: $bold-weight;
+}
+
+h1{
+	font-size: $large-size;
+	color: $medium-color;
+}
+
+h2, h3{
+	font-size: $medium-size;
+	color: $regular-color;
+}
+
+h4, h5{
+	font-size: $regular-size;
+	color: $light-color;
+}
