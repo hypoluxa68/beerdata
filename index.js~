@@ -13,7 +13,7 @@ app.get('/beers', (req, res) => {
 	res.render('beers', {title: 'Beer Data | Beers'})
 });
 
-app.get('/breweries', (req, res) => {
+app.get('/breweries', (req, res) = > {
 	res.render('breweries', {title: 'Beer Data | Breweries'})
 });
 
