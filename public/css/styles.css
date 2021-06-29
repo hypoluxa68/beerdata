@@ -112,4 +112,11 @@ header i {
   transition: margin-left 0.5s;
 }
 
+.card {
+  margin: 2em;
+  padding: 0;
+  width: calc(50% - 4em);
+  float: left;
+}
+
 /*# sourceMappingURL=styles.css.map */
