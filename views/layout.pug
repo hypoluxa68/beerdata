@@ -21,9 +21,21 @@ html(class="no-js" lang="en")
   script(src="https://kit.fontawesome.com/52cd21d3d0.js")
   script(src="js/plugins.js")
   script(src="js/main.js")
+  script(src="js/sheets.js")
  body
   div.container-fluid
-   nav
+   header
+    h1= title
+    div#open-nav-bar
+     i.fas.fa-bars
+    nav#main-nav.side-nav
+     div#close-nav-bar
+      i.fas.fa-times
+     div#nav-links
+      a(href="/"): i.fas.fa-tachometer-alt: span.comic Dashboard
+      a(href="/beers"): i.fas.fa-beer: span.comic Beers
+      a(href="/breweries"): i.fas.fa-city: span.comic Breweries
+     
   
   block content
   block foot

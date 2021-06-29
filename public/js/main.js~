@@ -1,25 +1,4 @@
 $(document).ready(function() {
 	// copyright
 	$('#copy-footer').html('<p>&copy;' + new Date().getFullYear() + ' | me.</p>');
-	
-	// open nav
-	$('#open-nav').click(function(){
-		function checkWidth(x){
-			if (x.matches){
-				$('nav').css('width', '50%');
-			} else {
-				$('nav').css('width', '20%');
-			}
-		}
-		var x = window.matchMedia("(max-width: 1000px)")
-		checkWidth(x)
-		x.addListener(checkWidth)
-		$('#open-nav').css('visibility', 'hidden');
-	});
-
-  // close nav
-	$('#site').click(function(){
-		$('nav').css('width', '0');
-		$('#open-nav').css('visibility', 'visible');
-	});
 });

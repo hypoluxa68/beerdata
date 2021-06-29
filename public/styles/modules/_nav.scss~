@@ -1,68 +1,62 @@
-i{
-	cursor: pointer;
+header{
 	margin: 0;
-	padding: 1em;
-	color: #fff;
-	font-weight: $bold-weight;
-	font-size: $medium-size;
+	padding: 1em 0;
+	background-color: $dark-color;
 }
 
-nav{
+header h1{
+	color: $white-text !important;
+	text-align: center;
+}
+
+header i{
 	margin: 0;
-	padding: 0;
+	padding: 1em;
+	font-size: $medium-size;
+	color: $white-text;
+}
+
+#main-nav{
+	margin: 0;
+	padding: 6.25em 0;
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
+	z-index: 1;
 	overflow-x: hidden;
 	transition: .5s;
-	background-color: $medium-color;
-	opacity: .75;
+	background-color: $dark-color;
 }
 
-nav a{
-	text-decoration: none;
+#main-nav a{
 	display: block;
 	transition: .3s;
 }
 
-#open-nav{
-	position: absolute;
-	top: 0;
-	left: 0;
+#nav-links{
+	margin: 0;
+	padding: 0 1em;
 }
 
-#links i{
-	position: absolute;
-	top: 0;
-	left: 0;
-	color: #fff;
-}
-
-#links{
-	margin: 1em 0 0 0;
-	padding: 0;
-}
-
-#links a{
-	color: #fff;
-	margin: .5em 0;
+#nav-links a{
+	margin: 0;
 	padding: .5em 1em;
-	font-size: $medium-size;
-	font-weight: $bold-weight;
+	text-decoration: none;
 }
 
-#links a:hover{
-	background-color: $regular-color;
-	opacity: .75;
+.comic{
+	margin: 0;
+	padding: 0 1em;
+	font-family: $header-font;
 }
 
-.fa-bars:hover{
-	color: $light-text;
+.fas{
+	width: 4em;
 }
 
-.fa-home:hover{
-	opacity: .75;
+#site{
+	transition: margin-left .5s;
 }
+

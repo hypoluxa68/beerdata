@@ -23,7 +23,18 @@ html(class="no-js" lang="en")
   script(src="js/main.js")
  body
   div.container-fluid
-
+   header
+    h1= title
+    div#open-nav-bar
+     i.fas.fa-bars
+    nav#main-nav.side-nav
+     div#close-nav-bar
+      i.fas.fa-times
+     div#nav-links
+      a(href="/"): i.fas.fa-tachometer-alt: span.comic Dashboard
+      a(href="/beers"): i.fas.fa-beer: span.comic Beers
+      a(href="/breweries"): i.fas.fa-city: span.comic Breweries
+     
   
   block content
   block foot
