@@ -12,9 +12,10 @@ $(document).ready(function(){
       		if(key.startsWith("gsx$")) {
          		formattedRow[key.replace("gsx$", "")] = row[key].$t
         		}
+			}			
+			beerData.push(formattedRow)
 			}
-			beerData.push(formattedRow)		
-			}
+			const byBeerData = beerData.sort((a,b) => (a.beername>b.beername) ? 1: -1);
 			function showBeers(){			
 				for(var i = 0; i < beerData.length; i++){
 					var beerText = ''
@@ -28,7 +29,10 @@ $(document).ready(function(){
 					$('#beers').append(beerText)
 				}
 			}
-		showBeers()
+			
+			
+		showBeers();
 		console.log(beerData)
+		console.log(byBeerData)
 	});
 });

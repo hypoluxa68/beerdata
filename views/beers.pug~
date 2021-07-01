@@ -2,3 +2,6 @@ extends layout
 
 block content
  div#site
+  div#beer-sort
+   
+  div#beers
